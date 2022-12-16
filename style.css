@@ -5,7 +5,7 @@ html {
 
 
 header{
-    background-color: #444 ;
+    background-color:#222 ;
     height: 20%;
     -webkit-mask: linear-gradient(to bottom, rgba(0,0,0,100) 0%, rgba(0,0,0,0) 100%);
 }
@@ -19,6 +19,8 @@ header,
     width: 100%; 
     padding: 1em;
     margin: auto;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
 }
 
 body {
@@ -27,6 +29,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     padding: 2em 2em 4em;
+    margin: auto;
 }
 
 footer{
@@ -34,7 +37,6 @@ footer{
     padding: 2em;
     color:#e0e0e0;
     margin: auto;
-    margin-top: 100px;
 }
 
 .ps{
@@ -42,7 +44,7 @@ footer{
 }
 
 .bodytext{
-    margin-top: 200px;
+    margin-top: 250px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -80,11 +82,16 @@ h2 {
     margin: 10px 15px;
     backgroud-position: center;
     background-size: cover;
-    transition: transform 0.5s;
+    transition: all 0.6s;
+    
 }
 
 .card:hover{
-    transform: translateY(-10px);
+    transition-delay: 200ms;
+    transition: all 0.6s;
+    box-shadow: 0 6px 2px rgba(0,0,0,0.15);
+    transform: scale(1.05, 1.05);
+    
     
 }
 
@@ -94,33 +101,40 @@ h2 {
     width: 8em;
     padding:10px;
     margin-top: 90px;
-    background-color: #777;
+    background-color: #666;
     background-radius:50px;
     text-decoration: none;
     color: #333;
     text-align: center;
-    transition: transform 1.5s;
+    transition: all 1.5s;
     list-style: none;
+    transition-delay: 300ms;
+    animation-delay: 300ms;
+    box-shadow: 0 4px 2px rgba(0,0,0,0.15);
     
 }
 
 .cardbutton a{
-                display: block;
-                border-radius:50px;
-                background-radius:50px;
-                text-decoration: none;
-                color: #444;
-            }
+    display: block;
+    border-radius:50px;
+    background-radius:50px;
+    text-decoration: none;
+    color: #444;
+    
+}
 
 .cardbutton:hover{
     transform: translateY(30px);
     background-color: #333;
+    transition-delay: 250ms;
+    animation-delay: 300ms;
+    box-shadow: 0 7px 2px rgba(0,0,0,0.15);
+    
 }
 
 .cardbutton a:hover{
-    color: #e0cd25;
+    color:#e0cd25; 
 }
-
 .card1{
     background-image: url(img/Ekonom.png);
 }
@@ -138,26 +152,33 @@ h2 {
 }
 
 ul.nav{
-                margin-left: 0px;
-                padding-left: 0px;
-                list-style: none;
-            }
+    margin-left: 0px;
+    padding-left: 0px;
+    list-style: none;
+}
+
 .nav li{ 
-                float: right;
-            }
+    float: right;
+}
 ul.nav a{
-                display: block;
-                border-radius:50px;
-                width: 6em;
-                padding:10px;
-                margin: 0 5px;
-                background-color: #777;
-                background-radius:50px;
-                text-decoration: none;
-                color: #333;
-                text-align: center;
-            }
+    display: block;
+    border-radius:50px;
+    width: 6em;
+    padding:10px;
+    margin: 0 5px;
+    background-color: #666;
+    background-radius:50px;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    transition: all 0.6s;
+}
 ul.nav a:hover{
-                background-color: #333;
-                color: #e0cd25;
-            }
+    background-color: #333;
+    color: #e0cd25;
+    transition: all 1s;
+    box-shadow: 0 6px 2px rgba(0,0,0,0.15);
+    transition-delay: 150ms;
+    transform: scale(1.1, 1.1);
+}
+
